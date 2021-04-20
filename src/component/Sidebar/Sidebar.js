@@ -7,7 +7,7 @@ const Sidebar = () => {
   const [users, setUsers] = useState([]);
   console.log(users);
   useEffect(() => {
-    fetch(`http://localhost:5000/users`)
+    fetch(`https://serene-crag-41999.herokuapp.com/users`)
       .then((res) => res.json())
       .then((data) => setUsers(data));
   }, []);

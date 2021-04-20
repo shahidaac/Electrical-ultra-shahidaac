@@ -14,7 +14,7 @@ const MakeAdmin = () => {
             email: data.email,
             role: 'admin'
         }
-        const url = `http://localhost:5000/addUser`;
+        const url = `https://serene-crag-41999.herokuapp.com/addUser`;
         fetch(url, {
             method: 'POST',
             headers: {
