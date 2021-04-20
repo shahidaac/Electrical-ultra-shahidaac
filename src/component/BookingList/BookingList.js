@@ -9,7 +9,7 @@ const BookingList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const [orderedProducts, setOrderedProducts] = useState([]);
     useEffect(() => {
-        fetch('https://serene-crag-41999.herokuapp.com/userOrders?email='+loggedInUser.email, {
+        fetch('http://localhost:5000/userOrders?email='+loggedInUser.email, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

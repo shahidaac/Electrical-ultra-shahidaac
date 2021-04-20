@@ -15,7 +15,7 @@ const MangeService = () => {
         const name = document.getElementById('name').value;
         const description = document.getElementById('description').value;
         const taskName = {id, name, description};
-        fetch(`https://serene-crag-41999.herokuapp.com/update/${id}`, {
+        fetch(`http://localhost:5000/update/${id}`, {
             method: 'PATCH',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(taskName)
@@ -30,7 +30,7 @@ const MangeService = () => {
     }
 
     const loadService = (id) => {
-        fetch(`https://serene-crag-41999.herokuapp.com/service/${id}`)
+        fetch(`http://localhost:5000/service/${id}`)
         .then(res => res.json())
         .then(result => {
             const update = document.getElementById('update');
@@ -46,7 +46,7 @@ const MangeService = () => {
     
 
     const deleteProduct = (id) => {
-        fetch(`https://serene-crag-41999.herokuapp.com/delete/${id}`, {
+        fetch(`http://localhost:5000/delete/${id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -60,7 +60,7 @@ const MangeService = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const [manageServices, setManageServices] = useState([]);
     useEffect(() => {
-        fetch('https://serene-crag-41999.herokuapp.com/services', {
+        fetch('http://localhost:5000/services', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

@@ -9,7 +9,7 @@ const OrderList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const [orders, setOrderes] = useState([]);
     useEffect(() => {
-        fetch('https://serene-crag-41999.herokuapp.com/orders', {
+        fetch('http://localhost:5000/orders', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

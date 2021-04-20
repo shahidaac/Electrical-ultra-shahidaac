@@ -6,9 +6,9 @@ import './Services.css';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch(`https://serene-crag-41999.herokuapp.com/services`)
-        .then(res => res.json())
-        .then(data => setServices(data))
+        fetch(`http://localhost:5000/services`)
+          .then((res) => res.json())
+          .then((data) => setServices(data));
     }, [])
     return (
         <div className="services">

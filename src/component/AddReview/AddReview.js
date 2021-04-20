@@ -16,7 +16,7 @@ const AddReview = () => {
       date: new Date().toDateString("dd/MM/yyyy HH:MM:SS"),
     };
     const newReview = { ...loggedInUser, ...reviewData };
-    const url = `https://serene-crag-41999.herokuapp.com/AddReview`;
+    const url = `http://localhost:5000/AddReview`;
     fetch(url, {
       method: "POST",
       headers: {
