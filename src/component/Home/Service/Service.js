@@ -19,7 +19,7 @@ const Service = ({service}) => {
               className="btn-animated"
               variant="primary"
             >
-              Read More
+              Place Order
             </Button>
           </Card.Body>
         </Card>
