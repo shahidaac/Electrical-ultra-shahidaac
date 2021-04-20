@@ -1,0 +1,25 @@
+.hero-header {
+    background-color: #f8f5f1;
+}
+a.navbar-brand img {
+    height: 38px;
+}
+.logo-text{
+    font-size: 25px;
+    font-weight:350;
+    font-family: fantasy;
+}
+.hero-header .navbar-nav a {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    color: #222;
+}
+.hero-header .navbar-nav a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #ffcc29;
+    
+}
+.log-btn{
+    color: #f8f5f1 !important;
+}

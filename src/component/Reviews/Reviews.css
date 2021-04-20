@@ -1,0 +1,9 @@
+.reviews{
+    margin-top: 80px
+}
+.review{
+    border: 1px solid #1b1a17;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}

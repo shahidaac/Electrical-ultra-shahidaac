@@ -1,0 +1,25 @@
+/* animated login button */
+
+/* <button class="btn-animated">Login</button> */
+.btn-animated {
+  padding: 6px 20px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #f4eee8;
+  background-color: #161d6f;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 9px #364547;
+}
+
+.btn-animated:hover {background-color: #025955}
+
+.btn-animated:active {
+  background-color: #8f4068;
+  box-shadow: 0 5px #4a3933;
+  transform: translateY(6px);
+}
+
+/* animated login button  end*/

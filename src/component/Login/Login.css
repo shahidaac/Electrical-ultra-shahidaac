@@ -1,0 +1,50 @@
+
+.login {
+    border: 1px solid #ebdfdf;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 400px;
+    padding: 50px;
+    border-radius: 20px;
+}
+.login-btn{
+    border: 1px solid #f0e5d8;
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+button.login-btn span {
+    position: absolute;
+    left: 20px;
+}
+h5{
+    font-size:45px;
+    font-weight: 400;
+}
+
+/* animated login button */
+.btn-animated {
+  padding: 9px 18px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #f4eee8;
+  background-color: #eca3f5;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 5px #301b3f;
+}
+
+.btn-animated:hover {background-color: #ffcc29}
+
+.btn-animated:active {
+  background-color: #350b40;
+  box-shadow: 1 5px #d3e0ea;
+  transform: translateY(4px);
+}
+
+/* animated login button  end*/
