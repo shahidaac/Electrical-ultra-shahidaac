@@ -32,7 +32,7 @@ const AddService = () => {
             image: imageURL
         }
         const newBooking = {...loggedInUser, ...bookData};
-        const url = `http://localhost:5000/addService`;
+        const url = `https://serene-crag-41999.herokuapp.com/addService`;
         fetch(url, {
             method: 'POST',
             headers: {

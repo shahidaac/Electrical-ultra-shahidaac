@@ -16,7 +16,7 @@ const Book = () => {
         role: 'user'
     }
 
-    fetch('http://localhost:5000/addUser', {
+    fetch('https://serene-crag-41999.herokuapp.com/addUser', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ const Book = () => {
             orderTime: new Date()
         }
 
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://serene-crag-41999.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ const Book = () => {
     }
     
     useEffect(() => {
-        fetch(`http://localhost:5000/book/${id}`)
+        fetch(`https://serene-crag-41999.herokuapp.com/book/${id}`)
         .then(res => res.json())
         .then(data => setBook(data))
     }, [id])
